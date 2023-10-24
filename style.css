@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    touch-action: pan-y;
+}
+
+.container{
+    position: relative;
+}
+img{
+    position: absolute;
+}
+#bg{
+    width: 100vw;
+    height: 44vw ;
+}
+
+#dino{
+    top: 31.3vw;
+    left:15vw;
+    width: 19vw;
+}
+#dragon{
+    width: 11vw;
+    top: 30vw;
+    left:85vw;
+}
+@keyframes jump {
+    50%{
+        top: 15vw;
+    }
+    100%{
+        top: 32vw;
+    }
+}
+@keyframes dragonMove {
+    100%{
+        left:0vw
+    }
+}
+#scoreBox{
+    width:20vw;
+    height: 3vw;
+    position: absolute;
+    z-index: 1;
+    left: 70vw;
+    top: 3vw;
+    border: 2px black solid;
+    background-color: rgb(120, 115, 242);
+    border-radius: 5%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5vw;
+}
+#button{
+    width:20vw;
+    height: 3vw;
+    position: absolute;
+    z-index: 1;
+    left: 40vw;
+    top: 3vw;
+    border: 2px black solid;
+    background-color: rgb(120, 115, 242);
+    border-radius: 5%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5vw;
+}
+#button:hover{
+    background-color: rgb(80, 75, 240);
+}
+#status{
+    width:20vw;
+    height: 3vw;
+    position: absolute;
+    z-index: 1;
+    left: 40vw;
+    top: 8vw;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5vw;
+}
+.button{
+    width:15vw;
+    height: 3vw;
+    position: absolute;
+    z-index: 1;
+    border: 2px black solid;
+    background-color: rgb(120, 115, 242);
+    border-radius: 5%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5vw;
+}
+.button:hover{
+    background-color: rgb(80, 75, 240);
+}
+#left{
+    left: 8vw;
+    top: 22vw;
+}
+#right{
+    
+    left: 75vw;
+    top: 22vw;
+}
+#jump{
+    left: 75vw;
+    top: 15vw;
+}
+#mobileInfo{
+    position: absolute;
+    font-size: xx-large;
+    top: 50vh;
+    margin-left: 3vh;
+    z-index: -1;
+}
